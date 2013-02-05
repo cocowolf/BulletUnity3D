@@ -405,6 +405,438 @@ class BulletSoftBodyPINVOKE {
   [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_Face")]
   public static extern void delete_Face(HandleRef jarg1);
 
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_masses_set")]
+  public static extern void Cluster_m_masses_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_masses_get")]
+  public static extern IntPtr Cluster_m_masses_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_nodes_set")]
+  public static extern void Cluster_m_nodes_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_nodes_get")]
+  public static extern IntPtr Cluster_m_nodes_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_framerefs_set")]
+  public static extern void Cluster_m_framerefs_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_framerefs_get")]
+  public static extern IntPtr Cluster_m_framerefs_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_framexform_set")]
+  public static extern void Cluster_m_framexform_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_framexform_get")]
+  public static extern IntPtr Cluster_m_framexform_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_idmass_set")]
+  public static extern void Cluster_m_idmass_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_idmass_get")]
+  public static extern float Cluster_m_idmass_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_imass_set")]
+  public static extern void Cluster_m_imass_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_imass_get")]
+  public static extern float Cluster_m_imass_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_locii_set")]
+  public static extern void Cluster_m_locii_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_locii_get")]
+  public static extern IntPtr Cluster_m_locii_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_invwi_set")]
+  public static extern void Cluster_m_invwi_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_invwi_get")]
+  public static extern IntPtr Cluster_m_invwi_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_com_set")]
+  public static extern void Cluster_m_com_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_com_get")]
+  public static extern IntPtr Cluster_m_com_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_vimpulses_set")]
+  public static extern void Cluster_m_vimpulses_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_vimpulses_get")]
+  public static extern IntPtr Cluster_m_vimpulses_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_dimpulses_set")]
+  public static extern void Cluster_m_dimpulses_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_dimpulses_get")]
+  public static extern IntPtr Cluster_m_dimpulses_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_nvimpulses_set")]
+  public static extern void Cluster_m_nvimpulses_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_nvimpulses_get")]
+  public static extern int Cluster_m_nvimpulses_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ndimpulses_set")]
+  public static extern void Cluster_m_ndimpulses_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ndimpulses_get")]
+  public static extern int Cluster_m_ndimpulses_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_lv_set")]
+  public static extern void Cluster_m_lv_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_lv_get")]
+  public static extern IntPtr Cluster_m_lv_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_av_set")]
+  public static extern void Cluster_m_av_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_av_get")]
+  public static extern IntPtr Cluster_m_av_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_leaf_set")]
+  public static extern void Cluster_m_leaf_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_leaf_get")]
+  public static extern IntPtr Cluster_m_leaf_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ndamping_set")]
+  public static extern void Cluster_m_ndamping_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ndamping_get")]
+  public static extern float Cluster_m_ndamping_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ldamping_set")]
+  public static extern void Cluster_m_ldamping_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_ldamping_get")]
+  public static extern float Cluster_m_ldamping_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_adamping_set")]
+  public static extern void Cluster_m_adamping_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_adamping_get")]
+  public static extern float Cluster_m_adamping_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_matching_set")]
+  public static extern void Cluster_m_matching_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_matching_get")]
+  public static extern float Cluster_m_matching_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_maxSelfCollisionImpulse_set")]
+  public static extern void Cluster_m_maxSelfCollisionImpulse_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_maxSelfCollisionImpulse_get")]
+  public static extern float Cluster_m_maxSelfCollisionImpulse_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_selfCollisionImpulseFactor_set")]
+  public static extern void Cluster_m_selfCollisionImpulseFactor_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_selfCollisionImpulseFactor_get")]
+  public static extern float Cluster_m_selfCollisionImpulseFactor_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_containsAnchor_set")]
+  public static extern void Cluster_m_containsAnchor_set(HandleRef jarg1, bool jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_containsAnchor_get")]
+  public static extern bool Cluster_m_containsAnchor_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_collide_set")]
+  public static extern void Cluster_m_collide_set(HandleRef jarg1, bool jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_collide_get")]
+  public static extern bool Cluster_m_collide_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_clusterIndex_set")]
+  public static extern void Cluster_m_clusterIndex_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Cluster_m_clusterIndex_get")]
+  public static extern int Cluster_m_clusterIndex_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_Cluster")]
+  public static extern IntPtr new_Cluster();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_Cluster")]
+  public static extern void delete_Cluster(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_velocity_set")]
+  public static extern void Impulse_m_velocity_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_velocity_get")]
+  public static extern IntPtr Impulse_m_velocity_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_drift_set")]
+  public static extern void Impulse_m_drift_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_drift_get")]
+  public static extern IntPtr Impulse_m_drift_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_asVelocity_set")]
+  public static extern void Impulse_m_asVelocity_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_asVelocity_get")]
+  public static extern int Impulse_m_asVelocity_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_asDrift_set")]
+  public static extern void Impulse_m_asDrift_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Impulse_m_asDrift_get")]
+  public static extern int Impulse_m_asDrift_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_Impulse")]
+  public static extern IntPtr new_Impulse();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_Impulse")]
+  public static extern void delete_Impulse(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_soft_set")]
+  public static extern void Body_m_soft_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_soft_get")]
+  public static extern IntPtr Body_m_soft_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_rigid_set")]
+  public static extern void Body_m_rigid_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_rigid_get")]
+  public static extern IntPtr Body_m_rigid_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_collisionObject_set")]
+  public static extern void Body_m_collisionObject_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_m_collisionObject_get")]
+  public static extern IntPtr Body_m_collisionObject_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_Body__SWIG_0")]
+  public static extern IntPtr new_Body__SWIG_0();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_Body__SWIG_1")]
+  public static extern IntPtr new_Body__SWIG_1(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_Body__SWIG_2")]
+  public static extern IntPtr new_Body__SWIG_2(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_activate")]
+  public static extern void Body_activate(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_invWorldInertia")]
+  public static extern IntPtr Body_invWorldInertia(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_invMass")]
+  public static extern float Body_invMass(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_xform")]
+  public static extern IntPtr Body_xform(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_linearVelocity")]
+  public static extern IntPtr Body_linearVelocity(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_angularVelocity__SWIG_0")]
+  public static extern IntPtr Body_angularVelocity__SWIG_0(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_angularVelocity__SWIG_1")]
+  public static extern IntPtr Body_angularVelocity__SWIG_1(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_velocity")]
+  public static extern IntPtr Body_velocity(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyVImpulse")]
+  public static extern void Body_applyVImpulse(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyDImpulse")]
+  public static extern void Body_applyDImpulse(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyImpulse")]
+  public static extern void Body_applyImpulse(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyVAImpulse")]
+  public static extern void Body_applyVAImpulse(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyDAImpulse")]
+  public static extern void Body_applyDAImpulse(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyAImpulse")]
+  public static extern void Body_applyAImpulse(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Body_applyDCImpulse")]
+  public static extern void Body_applyDCImpulse(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_Body")]
+  public static extern void delete_Body(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_bodies_set")]
+  public static extern void Joint_m_bodies_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_bodies_get")]
+  public static extern IntPtr Joint_m_bodies_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_refs_set")]
+  public static extern void Joint_m_refs_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_refs_get")]
+  public static extern IntPtr Joint_m_refs_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_cfm_set")]
+  public static extern void Joint_m_cfm_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_cfm_get")]
+  public static extern float Joint_m_cfm_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_erp_set")]
+  public static extern void Joint_m_erp_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_erp_get")]
+  public static extern float Joint_m_erp_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_split_set")]
+  public static extern void Joint_m_split_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_split_get")]
+  public static extern float Joint_m_split_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_drift_set")]
+  public static extern void Joint_m_drift_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_drift_get")]
+  public static extern IntPtr Joint_m_drift_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_sdrift_set")]
+  public static extern void Joint_m_sdrift_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_sdrift_get")]
+  public static extern IntPtr Joint_m_sdrift_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_massmatrix_set")]
+  public static extern void Joint_m_massmatrix_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_massmatrix_get")]
+  public static extern IntPtr Joint_m_massmatrix_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_delete_set")]
+  public static extern void Joint_m_delete_set(HandleRef jarg1, bool jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_m_delete_get")]
+  public static extern bool Joint_m_delete_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_Joint")]
+  public static extern void delete_Joint(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_Prepare")]
+  public static extern void Joint_Prepare(HandleRef jarg1, float jarg2, int jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_Solve")]
+  public static extern void Joint_Solve(HandleRef jarg1, float jarg2, float jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_Terminate")]
+  public static extern void Joint_Terminate(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_Joint_Type")]
+  public static extern IntPtr Joint_Type(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_m_rpos_set")]
+  public static extern void LJoint_m_rpos_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_m_rpos_get")]
+  public static extern IntPtr LJoint_m_rpos_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_Prepare")]
+  public static extern void LJoint_Prepare(HandleRef jarg1, float jarg2, int jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_Solve")]
+  public static extern void LJoint_Solve(HandleRef jarg1, float jarg2, float jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_Terminate")]
+  public static extern void LJoint_Terminate(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_Type")]
+  public static extern IntPtr LJoint_Type(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_LJoint")]
+  public static extern IntPtr new_LJoint();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_LJoint")]
+  public static extern void delete_LJoint(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_m_axis_set")]
+  public static extern void AJoint_m_axis_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_m_axis_get")]
+  public static extern IntPtr AJoint_m_axis_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_m_icontrol_set")]
+  public static extern void AJoint_m_icontrol_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_m_icontrol_get")]
+  public static extern IntPtr AJoint_m_icontrol_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_Prepare")]
+  public static extern void AJoint_Prepare(HandleRef jarg1, float jarg2, int jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_Solve")]
+  public static extern void AJoint_Solve(HandleRef jarg1, float jarg2, float jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_Terminate")]
+  public static extern void AJoint_Terminate(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_Type")]
+  public static extern IntPtr AJoint_Type(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_AJoint")]
+  public static extern IntPtr new_AJoint();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_AJoint")]
+  public static extern void delete_AJoint(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_life_set")]
+  public static extern void CJoint_m_life_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_life_get")]
+  public static extern int CJoint_m_life_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_maxlife_set")]
+  public static extern void CJoint_m_maxlife_set(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_maxlife_get")]
+  public static extern int CJoint_m_maxlife_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_rpos_set")]
+  public static extern void CJoint_m_rpos_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_rpos_get")]
+  public static extern IntPtr CJoint_m_rpos_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_normal_set")]
+  public static extern void CJoint_m_normal_set(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_normal_get")]
+  public static extern IntPtr CJoint_m_normal_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_friction_set")]
+  public static extern void CJoint_m_friction_set(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_m_friction_get")]
+  public static extern float CJoint_m_friction_get(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_Prepare")]
+  public static extern void CJoint_Prepare(HandleRef jarg1, float jarg2, int jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_Solve")]
+  public static extern void CJoint_Solve(HandleRef jarg1, float jarg2, float jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_Terminate")]
+  public static extern void CJoint_Terminate(HandleRef jarg1, float jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_Type")]
+  public static extern IntPtr CJoint_Type(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_CJoint")]
+  public static extern IntPtr new_CJoint();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_CJoint")]
+  public static extern void delete_CJoint(HandleRef jarg1);
+
   [DllImport("BulletSoftBody", EntryPoint="CSharp_Config_aeromodel_set")]
   public static extern void Config_aeromodel_set(HandleRef jarg1, int jarg2);
 
@@ -3239,6 +3671,15 @@ class BulletSoftBodyPINVOKE {
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_Face_SWIGUpcast")]
   public static extern IntPtr Face_SWIGUpcast(IntPtr jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_LJoint_SWIGUpcast")]
+  public static extern IntPtr LJoint_SWIGUpcast(IntPtr jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_AJoint_SWIGUpcast")]
+  public static extern IntPtr AJoint_SWIGUpcast(IntPtr jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_CJoint_SWIGUpcast")]
+  public static extern IntPtr CJoint_SWIGUpcast(IntPtr jarg1);
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btDefaultSoftBodySolver_SWIGUpcast")]
   public static extern IntPtr btDefaultSoftBodySolver_SWIGUpcast(IntPtr jarg1);
