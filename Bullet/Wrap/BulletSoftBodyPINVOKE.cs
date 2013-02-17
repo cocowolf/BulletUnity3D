@@ -1497,6 +1497,15 @@ class BulletSoftBodyPINVOKE {
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendLinearJoint__SWIG_3")]
   public static extern void btSoftBody_appendLinearJoint__SWIG_3(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
 
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendLinearJoint__SWIG_4")]
+  public static extern void btSoftBody_appendLinearJoint__SWIG_4(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendLinearJoint__SWIG_5")]
+  public static extern void btSoftBody_appendLinearJoint__SWIG_5(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendLinearJoint__SWIG_6")]
+  public static extern void btSoftBody_appendLinearJoint__SWIG_6(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendAngularJoint__SWIG_0")]
   public static extern void btSoftBody_appendAngularJoint__SWIG_0(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3, HandleRef jarg4);
 
@@ -1508,6 +1517,15 @@ class BulletSoftBodyPINVOKE {
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendAngularJoint__SWIG_3")]
   public static extern void btSoftBody_appendAngularJoint__SWIG_3(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendAngularJoint__SWIG_4")]
+  public static extern void btSoftBody_appendAngularJoint__SWIG_4(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendAngularJoint__SWIG_5")]
+  public static extern void btSoftBody_appendAngularJoint__SWIG_5(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_appendAngularJoint__SWIG_6")]
+  public static extern void btSoftBody_appendAngularJoint__SWIG_6(HandleRef jarg1, HandleRef jarg2, HandleRef jarg3);
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btSoftBody_addForce__SWIG_0")]
   public static extern void btSoftBody_addForce__SWIG_0(HandleRef jarg1, HandleRef jarg2);
@@ -3656,6 +3674,72 @@ class BulletSoftBodyPINVOKE {
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArrayVector3_copyFromArray")]
   public static extern void btAlignedObjectArrayVector3_copyFromArray(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_btAlignedObjectArraySBJointPtr__SWIG_0")]
+  public static extern IntPtr new_btAlignedObjectArraySBJointPtr__SWIG_0();
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_delete_btAlignedObjectArraySBJointPtr")]
+  public static extern void delete_btAlignedObjectArraySBJointPtr(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_new_btAlignedObjectArraySBJointPtr__SWIG_1")]
+  public static extern IntPtr new_btAlignedObjectArraySBJointPtr__SWIG_1(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_size")]
+  public static extern int btAlignedObjectArraySBJointPtr_size(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_at__SWIG_0")]
+  public static extern IntPtr btAlignedObjectArraySBJointPtr_at__SWIG_0(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_clear")]
+  public static extern void btAlignedObjectArraySBJointPtr_clear(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_pop_back")]
+  public static extern void btAlignedObjectArraySBJointPtr_pop_back(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_resizeNoInitialize")]
+  public static extern void btAlignedObjectArraySBJointPtr_resizeNoInitialize(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_resize__SWIG_0")]
+  public static extern void btAlignedObjectArraySBJointPtr_resize__SWIG_0(HandleRef jarg1, int jarg2, HandleRef jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_resize__SWIG_1")]
+  public static extern void btAlignedObjectArraySBJointPtr_resize__SWIG_1(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_expandNonInitializing")]
+  public static extern IntPtr btAlignedObjectArraySBJointPtr_expandNonInitializing(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_expand__SWIG_0")]
+  public static extern IntPtr btAlignedObjectArraySBJointPtr_expand__SWIG_0(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_expand__SWIG_1")]
+  public static extern IntPtr btAlignedObjectArraySBJointPtr_expand__SWIG_1(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_push_back")]
+  public static extern void btAlignedObjectArraySBJointPtr_push_back(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_capacity")]
+  public static extern int btAlignedObjectArraySBJointPtr_capacity(HandleRef jarg1);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_reserve")]
+  public static extern void btAlignedObjectArraySBJointPtr_reserve(HandleRef jarg1, int jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_swap")]
+  public static extern void btAlignedObjectArraySBJointPtr_swap(HandleRef jarg1, int jarg2, int jarg3);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_findBinarySearch")]
+  public static extern int btAlignedObjectArraySBJointPtr_findBinarySearch(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_findLinearSearch")]
+  public static extern int btAlignedObjectArraySBJointPtr_findLinearSearch(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_remove")]
+  public static extern void btAlignedObjectArraySBJointPtr_remove(HandleRef jarg1, HandleRef jarg2);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_initializeFromBuffer")]
+  public static extern void btAlignedObjectArraySBJointPtr_initializeFromBuffer(HandleRef jarg1, HandleRef jarg2, int jarg3, int jarg4);
+
+  [DllImport("BulletSoftBody", EntryPoint="CSharp_btAlignedObjectArraySBJointPtr_copyFromArray")]
+  public static extern void btAlignedObjectArraySBJointPtr_copyFromArray(HandleRef jarg1, HandleRef jarg2);
 
   [DllImport("BulletSoftBody", EntryPoint="CSharp_Material_SWIGUpcast")]
   public static extern IntPtr Material_SWIGUpcast(IntPtr jarg1);

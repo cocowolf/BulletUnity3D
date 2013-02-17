@@ -206,13 +206,13 @@ public class btSoftBody : IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Joint_p_t m_joints {
+  public btAlignedObjectArraySBJointPtr m_joints {
     set {
-      BulletSoftBodyPINVOKE.btSoftBody_m_joints_set(swigCPtr, SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Joint_p_t.getCPtr(value));
+      BulletSoftBodyPINVOKE.btSoftBody_m_joints_set(swigCPtr, btAlignedObjectArraySBJointPtr.getCPtr(value));
     } 
     get {
       IntPtr cPtr = BulletSoftBodyPINVOKE.btSoftBody_m_joints_get(swigCPtr);
-      SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Joint_p_t ret = (cPtr == IntPtr.Zero) ? null : new SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Joint_p_t(cPtr, false);
+      btAlignedObjectArraySBJointPtr ret = (cPtr == IntPtr.Zero) ? null : new btAlignedObjectArraySBJointPtr(cPtr, false);
       return ret;
     } 
   }
@@ -295,13 +295,13 @@ public class btSoftBody : IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Cluster_p_t m_clusters {
+  public SWIGTYPE_p_btAlignedObjectArrayT_Cluster_p_t m_clusters {
     set {
-      BulletSoftBodyPINVOKE.btSoftBody_m_clusters_set(swigCPtr, SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Cluster_p_t.getCPtr(value));
+      BulletSoftBodyPINVOKE.btSoftBody_m_clusters_set(swigCPtr, SWIGTYPE_p_btAlignedObjectArrayT_Cluster_p_t.getCPtr(value));
     } 
     get {
       IntPtr cPtr = BulletSoftBodyPINVOKE.btSoftBody_m_clusters_get(swigCPtr);
-      SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Cluster_p_t ret = (cPtr == IntPtr.Zero) ? null : new SWIGTYPE_p_btAlignedObjectArrayT_btSoftBody__Cluster_p_t(cPtr, false);
+      SWIGTYPE_p_btAlignedObjectArrayT_Cluster_p_t ret = (cPtr == IntPtr.Zero) ? null : new SWIGTYPE_p_btAlignedObjectArrayT_Cluster_p_t(cPtr, false);
       return ret;
     } 
   }
@@ -580,43 +580,73 @@ public class btSoftBody : IDisposable {
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendLinearJoint(SWIGTYPE_p_btSoftBody__LJoint__Specs specs, SWIGTYPE_p_btSoftBody__Cluster body0, SWIGTYPE_p_btSoftBody__Body body1) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_0(swigCPtr, SWIGTYPE_p_btSoftBody__LJoint__Specs.getCPtr(specs), SWIGTYPE_p_btSoftBody__Cluster.getCPtr(body0), SWIGTYPE_p_btSoftBody__Body.getCPtr(body1));
+  public void appendLinearJoint(SWIGTYPE_p_LJoint__Specs specs, Cluster body0, Body body1) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_0(swigCPtr, SWIGTYPE_p_LJoint__Specs.getCPtr(specs), Cluster.getCPtr(body0), Body.getCPtr(body1));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendLinearJoint(SWIGTYPE_p_btSoftBody__LJoint__Specs specs, SWIGTYPE_p_btSoftBody__Body body) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_1(swigCPtr, SWIGTYPE_p_btSoftBody__LJoint__Specs.getCPtr(specs), SWIGTYPE_p_btSoftBody__Body.getCPtr(body));
+  public void appendLinearJoint(SWIGTYPE_p_LJoint__Specs specs, Body body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_1(swigCPtr, SWIGTYPE_p_LJoint__Specs.getCPtr(specs), Body.getCPtr(body));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendLinearJoint(SWIGTYPE_p_btSoftBody__LJoint__Specs specs) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_2(swigCPtr, SWIGTYPE_p_btSoftBody__LJoint__Specs.getCPtr(specs));
+  public void appendLinearJoint(SWIGTYPE_p_LJoint__Specs specs) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_2(swigCPtr, SWIGTYPE_p_LJoint__Specs.getCPtr(specs));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendLinearJoint(SWIGTYPE_p_btSoftBody__LJoint__Specs specs, btSoftBody body) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_3(swigCPtr, SWIGTYPE_p_btSoftBody__LJoint__Specs.getCPtr(specs), btSoftBody.getCPtr(body));
+  public void appendLinearJoint(SWIGTYPE_p_LJoint__Specs specs, btSoftBody body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_3(swigCPtr, SWIGTYPE_p_LJoint__Specs.getCPtr(specs), btSoftBody.getCPtr(body));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendAngularJoint(SWIGTYPE_p_btSoftBody__AJoint__Specs specs, SWIGTYPE_p_btSoftBody__Cluster body0, SWIGTYPE_p_btSoftBody__Body body1) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_0(swigCPtr, SWIGTYPE_p_btSoftBody__AJoint__Specs.getCPtr(specs), SWIGTYPE_p_btSoftBody__Cluster.getCPtr(body0), SWIGTYPE_p_btSoftBody__Body.getCPtr(body1));
+  public void appendLinearJoint(SWIGTYPE_p_btVector3 position, btSoftBody softbody) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_4(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(position), btSoftBody.getCPtr(softbody));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendAngularJoint(SWIGTYPE_p_btSoftBody__AJoint__Specs specs, SWIGTYPE_p_btSoftBody__Body body) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_1(swigCPtr, SWIGTYPE_p_btSoftBody__AJoint__Specs.getCPtr(specs), SWIGTYPE_p_btSoftBody__Body.getCPtr(body));
+  public void appendLinearJoint(SWIGTYPE_p_btVector3 position, SWIGTYPE_p_btRigidBody rigidBody) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_5(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(position), SWIGTYPE_p_btRigidBody.getCPtr(rigidBody));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendAngularJoint(SWIGTYPE_p_btSoftBody__AJoint__Specs specs) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_2(swigCPtr, SWIGTYPE_p_btSoftBody__AJoint__Specs.getCPtr(specs));
+  public void appendLinearJoint(SWIGTYPE_p_btVector3 position, Cluster body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendLinearJoint__SWIG_6(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(position), Cluster.getCPtr(body));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public void appendAngularJoint(SWIGTYPE_p_btSoftBody__AJoint__Specs specs, btSoftBody body) {
-    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_3(swigCPtr, SWIGTYPE_p_btSoftBody__AJoint__Specs.getCPtr(specs), btSoftBody.getCPtr(body));
+  public void appendAngularJoint(SWIGTYPE_p_AJoint__Specs specs, Cluster body0, Body body1) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_0(swigCPtr, SWIGTYPE_p_AJoint__Specs.getCPtr(specs), Cluster.getCPtr(body0), Body.getCPtr(body1));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_AJoint__Specs specs, Body body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_1(swigCPtr, SWIGTYPE_p_AJoint__Specs.getCPtr(specs), Body.getCPtr(body));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_AJoint__Specs specs) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_2(swigCPtr, SWIGTYPE_p_AJoint__Specs.getCPtr(specs));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_AJoint__Specs specs, btSoftBody body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_3(swigCPtr, SWIGTYPE_p_AJoint__Specs.getCPtr(specs), btSoftBody.getCPtr(body));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_btVector3 axis, btSoftBody softbody) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_4(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(axis), btSoftBody.getCPtr(softbody));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_btVector3 axis, SWIGTYPE_p_btRigidBody rigidBody) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_5(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(axis), SWIGTYPE_p_btRigidBody.getCPtr(rigidBody));
+    if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public void appendAngularJoint(SWIGTYPE_p_btVector3 axis, Cluster body) {
+    BulletSoftBodyPINVOKE.btSoftBody_appendAngularJoint__SWIG_6(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(axis), Cluster.getCPtr(body));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -736,8 +766,8 @@ public class btSoftBody : IDisposable {
     return ret;
   }
 
-  public static SWIGTYPE_p_btVector3 clusterCom(SWIGTYPE_p_btSoftBody__Cluster cluster) {
-    SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.btSoftBody_clusterCom__SWIG_0(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster)), true);
+  public static SWIGTYPE_p_btVector3 clusterCom(Cluster cluster) {
+    SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.btSoftBody_clusterCom__SWIG_0(Cluster.getCPtr(cluster)), true);
     return ret;
   }
 
@@ -746,44 +776,44 @@ public class btSoftBody : IDisposable {
     return ret;
   }
 
-  public static SWIGTYPE_p_btVector3 clusterVelocity(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 rpos) {
-    SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.btSoftBody_clusterVelocity(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos)), true);
+  public static SWIGTYPE_p_btVector3 clusterVelocity(Cluster cluster, SWIGTYPE_p_btVector3 rpos) {
+    SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.btSoftBody_clusterVelocity(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos)), true);
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public static void clusterVImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 rpos, SWIGTYPE_p_btVector3 impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterVImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), SWIGTYPE_p_btVector3.getCPtr(impulse));
+  public static void clusterVImpulse(Cluster cluster, SWIGTYPE_p_btVector3 rpos, SWIGTYPE_p_btVector3 impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterVImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), SWIGTYPE_p_btVector3.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterDImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 rpos, SWIGTYPE_p_btVector3 impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterDImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), SWIGTYPE_p_btVector3.getCPtr(impulse));
+  public static void clusterDImpulse(Cluster cluster, SWIGTYPE_p_btVector3 rpos, SWIGTYPE_p_btVector3 impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterDImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), SWIGTYPE_p_btVector3.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 rpos, SWIGTYPE_p_btSoftBody__Impulse impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), SWIGTYPE_p_btSoftBody__Impulse.getCPtr(impulse));
+  public static void clusterImpulse(Cluster cluster, SWIGTYPE_p_btVector3 rpos, Impulse impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(rpos), Impulse.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterVAImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterVAImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
+  public static void clusterVAImpulse(Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterVAImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterDAImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterDAImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
+  public static void clusterDAImpulse(Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterDAImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterAImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btSoftBody__Impulse impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterAImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btSoftBody__Impulse.getCPtr(impulse));
+  public static void clusterAImpulse(Cluster cluster, Impulse impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterAImpulse(Cluster.getCPtr(cluster), Impulse.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public static void clusterDCImpulse(SWIGTYPE_p_btSoftBody__Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
-    BulletSoftBodyPINVOKE.btSoftBody_clusterDCImpulse(SWIGTYPE_p_btSoftBody__Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
+  public static void clusterDCImpulse(Cluster cluster, SWIGTYPE_p_btVector3 impulse) {
+    BulletSoftBodyPINVOKE.btSoftBody_clusterDCImpulse(Cluster.getCPtr(cluster), SWIGTYPE_p_btVector3.getCPtr(impulse));
     if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
   }
 
