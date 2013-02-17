@@ -11,7 +11,7 @@ namespace BulletCSharp {
 using System;
 using System.Runtime.InteropServices;
 
-public class AJoint : Joint {
+public class AJoint : SBJoint {
   private HandleRef swigCPtr;
 
   internal AJoint(IntPtr cPtr, bool cMemoryOwn) : base(BulletSoftBodyPINVOKE.AJoint_SWIGUpcast(cPtr), cMemoryOwn) {
@@ -74,8 +74,8 @@ public class AJoint : Joint {
     BulletSoftBodyPINVOKE.AJoint_Terminate(swigCPtr, dt);
   }
 
-  public override SWIGTYPE_p_Joint__eType___ Type() {
-    SWIGTYPE_p_Joint__eType___ ret = new SWIGTYPE_p_Joint__eType___(BulletSoftBodyPINVOKE.AJoint_Type(swigCPtr), true);
+  public override SWIGTYPE_p_SBJoint__eType___ Type() {
+    SWIGTYPE_p_SBJoint__eType___ ret = new SWIGTYPE_p_SBJoint__eType___(BulletSoftBodyPINVOKE.AJoint_Type(swigCPtr), true);
     return ret;
   }
 

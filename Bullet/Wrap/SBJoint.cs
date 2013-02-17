@@ -11,20 +11,20 @@ namespace BulletCSharp {
 using System;
 using System.Runtime.InteropServices;
 
-public class Joint : IDisposable {
+public class SBJoint : IDisposable {
   private HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal Joint(IntPtr cPtr, bool cMemoryOwn) {
+  internal SBJoint(IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new HandleRef(this, cPtr);
   }
 
-  internal static HandleRef getCPtr(Joint obj) {
+  internal static HandleRef getCPtr(SBJoint obj) {
     return (obj == null) ? new HandleRef(null, IntPtr.Zero) : obj.swigCPtr;
   }
 
-  ~Joint() {
+  ~SBJoint() {
     Dispose();
   }
 
@@ -33,7 +33,7 @@ public class Joint : IDisposable {
       if (swigCPtr.Handle != IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          BulletSoftBodyPINVOKE.delete_Joint(swigCPtr);
+          BulletSoftBodyPINVOKE.delete_SBJoint(swigCPtr);
         }
         swigCPtr = new HandleRef(null, IntPtr.Zero);
       }
@@ -43,10 +43,10 @@ public class Joint : IDisposable {
 
   public Body m_bodies {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_bodies_set(swigCPtr, Body.getCPtr(value));
+      BulletSoftBodyPINVOKE.SBJoint_m_bodies_set(swigCPtr, Body.getCPtr(value));
     } 
     get {
-      IntPtr cPtr = BulletSoftBodyPINVOKE.Joint_m_bodies_get(swigCPtr);
+      IntPtr cPtr = BulletSoftBodyPINVOKE.SBJoint_m_bodies_get(swigCPtr);
       Body ret = (cPtr == IntPtr.Zero) ? null : new Body(cPtr, false);
       return ret;
     } 
@@ -54,10 +54,10 @@ public class Joint : IDisposable {
 
   public SWIGTYPE_p_btVector3 m_refs {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_refs_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
+      BulletSoftBodyPINVOKE.SBJoint_m_refs_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
     } 
     get {
-      IntPtr cPtr = BulletSoftBodyPINVOKE.Joint_m_refs_get(swigCPtr);
+      IntPtr cPtr = BulletSoftBodyPINVOKE.SBJoint_m_refs_get(swigCPtr);
       SWIGTYPE_p_btVector3 ret = (cPtr == IntPtr.Zero) ? null : new SWIGTYPE_p_btVector3(cPtr, false);
       return ret;
     } 
@@ -65,41 +65,41 @@ public class Joint : IDisposable {
 
   public float m_cfm {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_cfm_set(swigCPtr, value);
+      BulletSoftBodyPINVOKE.SBJoint_m_cfm_set(swigCPtr, value);
     } 
     get {
-      float ret = BulletSoftBodyPINVOKE.Joint_m_cfm_get(swigCPtr);
+      float ret = BulletSoftBodyPINVOKE.SBJoint_m_cfm_get(swigCPtr);
       return ret;
     } 
   }
 
   public float m_erp {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_erp_set(swigCPtr, value);
+      BulletSoftBodyPINVOKE.SBJoint_m_erp_set(swigCPtr, value);
     } 
     get {
-      float ret = BulletSoftBodyPINVOKE.Joint_m_erp_get(swigCPtr);
+      float ret = BulletSoftBodyPINVOKE.SBJoint_m_erp_get(swigCPtr);
       return ret;
     } 
   }
 
   public float m_split {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_split_set(swigCPtr, value);
+      BulletSoftBodyPINVOKE.SBJoint_m_split_set(swigCPtr, value);
     } 
     get {
-      float ret = BulletSoftBodyPINVOKE.Joint_m_split_get(swigCPtr);
+      float ret = BulletSoftBodyPINVOKE.SBJoint_m_split_get(swigCPtr);
       return ret;
     } 
   }
 
   public SWIGTYPE_p_btVector3 m_drift {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_drift_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
+      BulletSoftBodyPINVOKE.SBJoint_m_drift_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.Joint_m_drift_get(swigCPtr), true);
+      SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.SBJoint_m_drift_get(swigCPtr), true);
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
@@ -107,11 +107,11 @@ public class Joint : IDisposable {
 
   public SWIGTYPE_p_btVector3 m_sdrift {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_sdrift_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
+      BulletSoftBodyPINVOKE.SBJoint_m_sdrift_set(swigCPtr, SWIGTYPE_p_btVector3.getCPtr(value));
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.Joint_m_sdrift_get(swigCPtr), true);
+      SWIGTYPE_p_btVector3 ret = new SWIGTYPE_p_btVector3(BulletSoftBodyPINVOKE.SBJoint_m_sdrift_get(swigCPtr), true);
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
@@ -119,11 +119,11 @@ public class Joint : IDisposable {
 
   public SWIGTYPE_p_btMatrix3x3 m_massmatrix {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_massmatrix_set(swigCPtr, SWIGTYPE_p_btMatrix3x3.getCPtr(value));
+      BulletSoftBodyPINVOKE.SBJoint_m_massmatrix_set(swigCPtr, SWIGTYPE_p_btMatrix3x3.getCPtr(value));
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
     } 
     get {
-      SWIGTYPE_p_btMatrix3x3 ret = new SWIGTYPE_p_btMatrix3x3(BulletSoftBodyPINVOKE.Joint_m_massmatrix_get(swigCPtr), true);
+      SWIGTYPE_p_btMatrix3x3 ret = new SWIGTYPE_p_btMatrix3x3(BulletSoftBodyPINVOKE.SBJoint_m_massmatrix_get(swigCPtr), true);
       if (BulletSoftBodyPINVOKE.SWIGPendingException.Pending) throw BulletSoftBodyPINVOKE.SWIGPendingException.Retrieve();
       return ret;
     } 
@@ -131,28 +131,28 @@ public class Joint : IDisposable {
 
   public bool m_delete {
     set {
-      BulletSoftBodyPINVOKE.Joint_m_delete_set(swigCPtr, value);
+      BulletSoftBodyPINVOKE.SBJoint_m_delete_set(swigCPtr, value);
     } 
     get {
-      bool ret = BulletSoftBodyPINVOKE.Joint_m_delete_get(swigCPtr);
+      bool ret = BulletSoftBodyPINVOKE.SBJoint_m_delete_get(swigCPtr);
       return ret;
     } 
   }
 
   public virtual void Prepare(float dt, int iterations) {
-    BulletSoftBodyPINVOKE.Joint_Prepare(swigCPtr, dt, iterations);
+    BulletSoftBodyPINVOKE.SBJoint_Prepare(swigCPtr, dt, iterations);
   }
 
   public virtual void Solve(float dt, float sor) {
-    BulletSoftBodyPINVOKE.Joint_Solve(swigCPtr, dt, sor);
+    BulletSoftBodyPINVOKE.SBJoint_Solve(swigCPtr, dt, sor);
   }
 
   public virtual void Terminate(float dt) {
-    BulletSoftBodyPINVOKE.Joint_Terminate(swigCPtr, dt);
+    BulletSoftBodyPINVOKE.SBJoint_Terminate(swigCPtr, dt);
   }
 
-  public virtual SWIGTYPE_p_Joint__eType___ Type() {
-    SWIGTYPE_p_Joint__eType___ ret = new SWIGTYPE_p_Joint__eType___(BulletSoftBodyPINVOKE.Joint_Type(swigCPtr), true);
+  public virtual SWIGTYPE_p_SBJoint__eType___ Type() {
+    SWIGTYPE_p_SBJoint__eType___ ret = new SWIGTYPE_p_SBJoint__eType___(BulletSoftBodyPINVOKE.SBJoint_Type(swigCPtr), true);
     return ret;
   }
 
